@@ -1,0 +1,64 @@
+#projects {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  overflow: hidden;
+  background-color: #0b0b0b;
+  padding: 60px 0;
+}
+
+#para {
+  font-size: 3.5vmax;
+  background: linear-gradient(to right, rgb(203, 53, 108), white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ✅ Grid layout: 3 cards per row, 2 rows total */
+.project-grid {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ✅ Smooth zoom-in & zoom-out on hover */
+.project-grid > div {
+  transition: transform 0.4s ease;
+  transform: scale(1);
+  cursor: pointer;
+}
+
+.project-grid > div:hover {
+  transform: scale(1.08);
+}
+
+/* RESPONSIVE: stack into 2 columns on tablets */
+@media (max-width: 1024px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+  }
+}
+
+/* RESPONSIVE: stack into 1 column on phones */
+@media (max-width: 600px) {
+  .project-grid {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+
+  #para {
+    font-size: 2.2rem;
+  }
+}
