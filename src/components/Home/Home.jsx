@@ -58,7 +58,7 @@ function Home() {
             </a>
 
             <a
-              href="https://drive.google.com/file/d/1-_bOZPK92zsVab5Us3NbvfZ1LV3ray0J/view"
+              href="https://drive.google.com/file/d/16aWNHzZrsNmifYOFZpnyH7hNNUy405u1/view"
               target="_blank"
               rel="noopener noreferrer"
               className="resume-btn"
